@@ -1,15 +1,114 @@
 @font-face {
   font-family: 'Speedee-Bold';
-  src: url(/assets/Speedee-Bold.woff) format('woff');
+  src: url(./assets/Speedee-Bold.woff) format('woff');
 }
 
 @font-face {
   font-family: 'Speedee-Regular';
-  src: url(/assets/Speedee-Regular.woff) format('woff');
+  src: url(./assets/Speedee-Regular.woff) format('woff');
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.grid {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+}
+
+@media screen and (min-width: 1242px) and (min-height: 768px) {
+  body {
+    background-image: url(./assets/sea-background.jpg);
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Speedee-Regular', sans-serif;
+  }
+
+  .wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  img:not(.content-placeholder, .summer-menu-logo), .left-copy, .right-copy {
+    position: fixed;
+  }
+
+  .content {
+    margin-top: 50px;
+    position: relative;
+    z-index: 5;
+  }
+
+  .legals {
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+
+  .logo {
+    top: 60px;
+    right: 250px;
+  }
+
+  .summer-menu-logo {
+    height: 150px;
+    margin-left: 25px;
+  }
+
+  .left-copy,
+  .right-copy {
+    color: white;
+    font-size: 11px;
+  }
+
+  .left-logo, .right-logo {
+    width: 100px;
+    height: auto;
+  }
+
+  .left-burger,
+  .right-burger {
+    width: 350px;
+    height: auto;
+  }
+
+  .left-logo {
+    left: 350px;
+    bottom: 450px;
+  }
+
+  .left-copy {
+    left: 360px;
+    bottom: 370px;
+  }
+
+  .left-burger {
+    left: 150px;
+    bottom: 0;
+  }
+
+  .right-logo {
+    right: 350px;
+    bottom: 450px;
+  }
+
+  .right-copy {
+    right: 360px;
+    bottom: 370px;
+  }
+
+  .right-burger {
+    right: 150px;
+    bottom: 0;
+  }
 }
