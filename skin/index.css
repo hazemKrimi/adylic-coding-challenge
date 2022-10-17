@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'Speedee-Bold';
+  src: url(/assets/Speedee-Bold.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Speedee-Regular';
+  src: url(/assets/Speedee-Regular.woff) format('woff');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
